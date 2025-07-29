@@ -1,0 +1,22 @@
+<script>
+if (!sessionStorage.getItem("redirected")) {
+  sessionStorage.setItem("redirected", "true");
+
+  // Array of your direct links
+  var links = [
+    "https://cine690.blogspot.com/",
+    "https://cine690.blogspot.com/",
+    "https://cine690.blogspot.com/",
+    "https://cine690.blogspot.com/",
+    "https://cine690.blogspot.com/"
+  ];
+
+  // Select a random link
+  var randomLink = links[Math.floor(Math.random() * links.length)];
+
+  // Redirect after 1 second
+  setTimeout(function() {
+    window.location.href = randomLink;
+  }, 1000);
+}
+</script>
